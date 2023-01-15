@@ -7,7 +7,7 @@ To make sure you don’t already have a set of keys on your computer, type the f
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
-​ `ls –al ~/.ssh`
+​ ls –al ~/.ssh
 </div>
 <br>
 
@@ -20,7 +20,7 @@ Enter the following command along with your email to generate your keys.
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
-`ssh-keygen –t rsa –b 4096 –C "YOURGITHUBEMAIL@PLACEHOLDER.NET"`
+ssh-keygen –t rsa –b 4096 –C "YOURGITHUBEMAIL@PLACEHOLDER.NET"
 </div>
 <br>
 
@@ -32,7 +32,7 @@ Link your key to your machine using a tool called the ssh-agent. Run the followi
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
-`eval "$(ssh-agent –s)"`
+eval "$(ssh-agent –s)"
 </div>
 <br>
 
@@ -44,7 +44,7 @@ Run the following command:
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
-`ssh-add ~/.ssh/id_rsa`
+ssh-add ~/.ssh/id_rsa
 </div>
 <br>
 
@@ -54,7 +54,7 @@ To add the key to GitHub, copy the key to your clipboard by entering the followi
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
-`pbcopy < ~/.ssh/id_rsa.pub`
+pbcopy < ~/.ssh/id_rsa.pub
 </div>
 <br>
 
@@ -70,7 +70,7 @@ To add GitHub to your computer’s list of acceptable SSH hosts, type the follow
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
-`ssh –T git@github.com`
+ssh –T git@github.com
 </div>
 <br>
 
