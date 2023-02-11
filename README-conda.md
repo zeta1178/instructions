@@ -29,6 +29,10 @@ Firstly let’s create the activate.d with the following.
 ```$ mkdir -p "${CONDA_PREFIX}/etc/conda/activate.d"```
 
 Now let’s add in the activation script into that directory under the name node.sh with the following contents:
+Navigate to the following as an example:
+
+```/Users/michaelcruz/opt/miniconda3/envs/image-ai/etc/conda/activate.d```
+Then create a node.sh file in that directory
 
 ```
 #!/usr/bin/env bash
