@@ -6,11 +6,13 @@ I like to add the --cdk suffix to all of my cdk conda envs.
 
 This is often to distinguish them from the project logic itself which may be called workshop.
 
-```$ conda create --yes \
+```
+$ conda create --yes \
     --name 'workshop--cdk' \
     --channel 'conda-forge' \
     nodejs=="16.13.0" \
-    pip```
+    pip
+```
 
 Step 2: Add in the activation script
 Activate the environment and install aws-cdk.
@@ -28,7 +30,8 @@ Firstly let’s create the activate.d with the following.
 
 Now let’s add in the activation script into that directory under the name node.sh with the following contents:
 
-```#!/usr/bin/env bash
+```
+#!/usr/bin/env bash
 
 # Set both NPM_CONFIG_PREFIX and NODE_PATH env vars
 export NPM_CONFIG_PREFIX="${CONDA_PREFIX}"
@@ -40,7 +43,8 @@ mkdir -p "${NPM_CONFIG_PREFIX}/node_modules"
 # Add in the bin path for each of the node modules that we install
 for bin_path in `find "${NPM_CONFIG_PREFIX}/node_modules" -mindepth 2 -maxdepth 2 -name "bin"`; do
     export PATH="${bin_path}:${PATH}"
-done```
+done
+```
 
 Step 3: Re-activate the environment
 This ensures that all of our environment scripts are activated correctly.
@@ -57,22 +61,26 @@ We need to set the prefix for the first npm installation into this directory.
 
 Activate and deactivate the environment
 
-```$ conda deactivate
-$ conda activate workshop--cdk```
+```$ conda deactivate```
+```$ conda activate workshop--cdk```
 
 Step 5: Test out your cdk version
 We can see that the cdk is the right cdk (inside the conda prefix) and is the version we expect.
 
-```$ which cdk
+```
+$ which cdk
 /home/alexiswl/miniforge3/envs/cdk--cdk-workshop-v2/node_modules/aws-cdk/bin/cdk
 $ cdk --version
-2.1.0 (build f4f18b1)```
+2.1.0 (build f4f18b1)
+```
 
 Step 6: Create your cdk app
 Change directory to where you wish to initialise your app and then run cdk init .
 
-```$ cd /path/to/cdk/dir
-$ cdk init sample-app --language python```
+```
+$ cd /path/to/cdk/dir
+$ cdk init sample-app --language python
+```
 
 Step 7 (optional): Install project requirements into conda
 If we set the project as a python project in the previous step, we need to install the requirements into our conda env. Typescript projects can skip this step.
