@@ -54,7 +54,7 @@ To add the key to GitHub, copy the key to your clipboard by entering the followi
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
-pbcopy < ~/.ssh/id_rsa.pub
+cat < ~/.ssh/id_rsa.pub
 </div>
 <br>
 
