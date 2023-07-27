@@ -14,6 +14,11 @@ $ conda create --yes \
     pip
 ```
 
+```
+$ pip freeze > requirements.txt
+pip install -r requirements.txt
+```
+
 Step 2: Add in the activation script
 Activate the environment and install aws-cdk.
 
