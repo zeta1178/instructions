@@ -10,8 +10,8 @@ This is often to distinguish them from the project logic itself which may be cal
 $ conda create --yes \
     --name 'workshop--cdk' \
     --channel 'conda-forge' \
-    nodejs=="16.13.0" \
-    pip
+    nodejs=="20.1.0" \
+    pip python=3.11
 ```
 
 ```
