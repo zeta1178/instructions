@@ -68,7 +68,7 @@ We need to set the prefix for the first npm installation into this directory.
 
 ```$ npm install aws-cdk@^2 --prefix "${NPM_CONFIG_PREFIX}"```
 
-Activate and deactivate the environment
+Deactivate and activate the environment
 
 ```$ conda deactivate```
 ```$ conda activate workshop--cdk```
