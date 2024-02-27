@@ -80,11 +80,13 @@ SSHKey6
 
 <br>
 below is used to add a new remote:
+<br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
 git remote add origin git@github.com:User/UserRepo.git
 </div>
 <br>
 below is used to change the url of an existing remote repository:
+<br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
 git remote set-url origin git@github.com:User/UserRepo.git
 </div>
