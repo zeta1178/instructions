@@ -77,6 +77,7 @@ ssh –T git@github.com
 You should see an RSA fingerprint in your window. Enter "yes" only if it matches the one highlighted in the image below:
 
 SSHKey6
+
 <br>
 below is used to add a new remote:
 <br>
