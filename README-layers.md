@@ -54,6 +54,16 @@ docker run -v "$PWD":/var/task "lambci/lambda:build-python3.8" /bin/sh -c "pip i
 </div>
 <br>
 
+# Docker Desktop Part 2
+
+Open a folder add requirements.txt (with package(s)) 
+
+<br>
+<div style="background-color: rgb(50, 50, 50);color:yellow">
+docker run --entrypoint="/bin/bash" --rm -v "$PWD":/var/task "amazon/aws-lambda-python:3.12" -c "pip install -r requirements.txt -t python/lib/python3.12/site-packages/;exit"
+</div>
+<br>
+
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
 zip -9 -r mylayer.zip python
