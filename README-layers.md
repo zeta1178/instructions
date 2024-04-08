@@ -44,7 +44,7 @@ get /home/ec2-user/temp/layer.zip /Users/cruzaws/Documents/layers/layer.zip`
 </div>
 <br>
 
-# Docker Desktop
+# Docker Method
 
 Open a folder add requirements.txt (with package(s))
 
@@ -54,7 +54,7 @@ docker run -v "$PWD":/var/task "lambci/lambda:build-python3.8" /bin/sh -c "pip i
 </div>
 <br>
 
-# Docker Desktop Part 2
+# Docker Method Part 2
 
 Open a folder add requirements.txt (with package(s)) 
 
