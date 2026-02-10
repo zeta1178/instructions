@@ -44,7 +44,7 @@ get /home/ec2-user/temp/layer.zip /Users/cruzaws/Documents/layers/layer.zip`
 </div>
 <br>
 
-# Docker Method
+# The Docker Method
 
 Open a folder add requirements.txt (with package(s))
 
