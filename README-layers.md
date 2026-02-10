@@ -46,7 +46,7 @@ get /home/ec2-user/temp/layer.zip /Users/cruzaws/Documents/layers/layer.zip`
 
 # The Docker Method
 
-Open a folder add requirements.txt (with package(s))
+Open a new folder add requirements.txt (with package(s))
 
 <br>
 <div style="background-color: rgb(50, 50, 50);color:yellow">
