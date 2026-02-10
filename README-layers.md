@@ -54,7 +54,7 @@ docker run --rm -v "$PWD":/var/task "lambci/lambda:build-python3.8" /bin/sh -c "
 </div>
 <br>
 
-# Docker Method Part 2
+# Docker Method Part 2.5
 
 Open a folder add requirements.txt (with package(s)) 
 
